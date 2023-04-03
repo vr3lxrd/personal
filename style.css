@@ -130,6 +130,7 @@
         justify-content: center;
     }
     .link{
+        margin-right: 0;
         padding: 0px 10px 0px 10px
     }
 }
