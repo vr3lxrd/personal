@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Krona One', sans-serif;
+    color: white
+}
+
+#page-background{
+    width: 100vw;
+    height: 100vh;
+    background-color: #D73C70;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    width: 100vw;
+    height: 450px;
+    background-color: white;
+    background-image: url("./img/spirit_blossom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+    background-position-x: center
+}
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    justify-content: center;
+}
+#center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#about{
+    width: -webkit-fill-available;
+    margin: 105px;
+    margin-bottom: 35px;
+    background: rgba(255, 255, 255, 0.2);
+}
+#about-header{
+    padding: 15px 0px 15px 30px;
+    background: rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+}
+#about-content{
+    padding: 15px 30px 15px 30px;
+    font-size: 18px;
+}
+#footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: -webkit-fill-available;
+    margin: 0px 105px 0px 105px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+.link:hover{
+    color: gray;
+}
+@media screen and (max-width: 1024px){
+    #header{
+        background-position-y: 0;
+    }
+    #content{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    #center{
+        margin: 20px;
+        margin-bottom: 70px;
+    }
+    #title{
+        font-size: 32px;
+        line-height: 20px;
+    }
+    #subtitle{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    #about{
+        margin-top: 50px;
+        margin: 20px
+    }
+    #about-header{
+        font-size: 16px;
+    }
+    #about-content{
+        padding: 15px 30px 15px 30px;
+        font-size: 12px;
+    }
+    #footer{
+        margin: 20px;
+        margin-top: 0;
+        font-size: 12px;
+        justify-content: center;
+    }
+    .link{
+        padding: 0px 10px 0px 10px
+    }
+}
