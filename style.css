@@ -15,8 +15,8 @@
 }
 #header{
     width: 100vw;
-    height: 450px;
-    background-color: white;
+    min-height: 200px;
+    max-height: 450px;
     background-image: url("./img/spirit_blossom.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,22 +80,28 @@
 .link{
     display: flex;
     align-items: center;
-    padding-right: 50px;
+    margin-right: 50px;
 }
 .link:hover{
-    color: gray;
+    color: rgb(206, 206, 206);
 }
+
+@media (max-height: 880px){
+    #page-background{
+        overflow: auto;
+    }
+}
+
 @media screen and (max-width: 1024px){
     #header{
         background-position-y: 0;
     }
     #content{
-        margin-top: 20px;
-        margin-bottom: 0;
+        margin: 0;
     }
     #center{
         margin: 20px;
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
     #title{
         font-size: 32px;
